@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.toit {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 50vw 150px 50vw;
+    border-color: transparent transparent #891E1E transparent;
+}
+
+
+.maison {
+    height: calc(100vh - 150px);
+    width: 100vw;
+    background: #D15292;
+}
+
+.porte img {
+    height: calc(100vh - 180px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+@font-face {
+    font-family: 'lazen';
+    src: url('./villa-fonts/LazenbyCompLiquid.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'delius';
+    src: url('./villa-fonts/Delius-Regular.ttf') format('truetype');
+  }
+
+  .titre {
+    font-family: 'lazen', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #5E1791;
+    width: 176px;
+    color: white;
+    position: fixed;
+    margin: 10px;
+    z-index: 1;
+  }
+
+  #ressources {
+    font-family: 'delius', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 13px;
+    line-height: 19px;
+    display: none;
+    width: calc(50vw - 45px);
+    background: #5E1791;
+    padding: 90px 20px 20px 20px;
+    position: fixed;
+    height: calc(100vh - 150px);
+  }
+  a {
+    color: white;
+  }
+
+  .facade-droite {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    margin: 10px;
+  }
+
+  .fenetre {
+    font-family: 'lazen', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #5E1791;
+    width: 176px;
+    color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  }
