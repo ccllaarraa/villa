@@ -18,6 +18,7 @@ body {
     background: #D15292;
 }
 .maison-couloir {
+  min-height: calc(100vh - 150px);
   height: auto;
   width: 100vw;
   background: #D15292;
