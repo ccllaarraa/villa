@@ -17,6 +17,12 @@ body {
     width: 100vw;
     background: #D15292;
 }
+.maison-couloir {
+  height: auto;
+  width: 100vw;
+  background: #D15292;
+}
+
 
 .porte img {
     height: calc(100vh - 180px);
@@ -90,4 +96,20 @@ body {
     color: white;
   margin-bottom: 10px;
   text-align: center;
+  }
+
+
+  /* couloir */
+
+  .portes {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .portes a img {
+    cursor: pointer;
+    max-height: 18vh;
+    padding: 10px 22px;
   }
