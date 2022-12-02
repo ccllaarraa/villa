@@ -103,7 +103,7 @@ body {
   /* couloir */
 
   .portes {
-    padding: 20px;
+    padding: 20px 80px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -112,5 +112,10 @@ body {
   .portes a img {
     cursor: pointer;
     max-height: 18vh;
-    padding: 10px 22px;
+    padding: 22px;
+  }
+
+  .portes a img:hover {
+   transform: scale(1.2);
+   transition: 1s;
   }
