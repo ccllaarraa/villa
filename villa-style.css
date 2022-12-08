@@ -16,6 +16,7 @@ body {
     height: calc(100vh - 150px);
     width: 100vw;
     background: #D15292;
+    position: fixed;
 }
 .maison-couloir {
   min-height: calc(100vh - 150px);
@@ -65,8 +66,8 @@ body {
   #ressources {
     font-family: 'delius', Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 2.1vh;
+    line-height: 2.6vh;
     display: none;
     width: calc(50vw - 45px);
     background: #5E1791;
@@ -90,7 +91,7 @@ body {
     font-family: 'lazen', Arial, Helvetica, sans-serif;
     font-size: 30px;
     padding: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 10px;
     background-color: #5E1791;
     width: 176px;
@@ -119,4 +120,72 @@ body {
   .portes a img:hover {
    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-58deg);
    transition: 1.5s;
+  }
+.la-porte {
+  transition: 0.5s;
+}
+  .ciao {
+opacity: 0;
+visibility: hidden;
+
+  }
+
+  .secret-droite {
+    width: 50vw;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background: #D15292;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .secret-gauche {
+    width: 50vw;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    background: #D15292;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .maison-couloir {
+    height: 100%;
+    position: absolute;
+    background: #19a44e;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1.5s;
+  }
+  .hello {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .fenetre, .titre {
+  font-size: 5vw;
+  width: auto;
+}
+
+#ressources {
+ padding: 60px 10px 10px 10px;
+ width: calc(50vw - 23px);
+ font-size: 12px;
+    line-height: 1.2;
+}
+.maison {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.maison-couloir {
+  height: auto;
+}
+.portes {
+  padding: 5px;
+}
   }

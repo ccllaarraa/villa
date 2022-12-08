@@ -6,6 +6,15 @@ $( "#clickme" ).click(function() {
   });
 });
 
+
+$( ".porte" ).click(function() {
+  $(".la-porte").addClass("ciao");
+  $(".secret-droite").addClass("hello").animate({"right": "-=50vw"}, "slow");
+  $(".secret-gauche").addClass("hello").animate({"left": "-=50vw"}, "slow");
+  $(".maison-couloir").addClass("hello");
+  $("#clickme").addClass("ciao");
+});
+
 });
 
 
